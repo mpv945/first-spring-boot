@@ -15,9 +15,14 @@
     配置完成重启 VSCode
   3. ctrl+shift+p 搜索spring 就可以像idea一样设置项目初始化步骤。最后选择生成到哪个目录。生成完点击open 就能打开项目，如果需要debug，打开调试选择带红点的设置按钮就能生成调试luanch.json 一个是单文件运行，一个是以boot启动文件运行。
 
-  4. 安装Sencha Ext JS插件，以支持extjs开发；安装好之后打开文件：LicenseManager.js（路径：C:\Users\你的用户名\.vscode\extensions\Sencha.vscode-extjs-版本号\out\src\LicenseManager.js）;把下面代码做如下修改，从const licenses到licenseJson = 上面的}止 这段/* */注释掉 加入：
+  4. https://docs.sencha.com/ide_plugins/guides/visual_studio_code_ide_plugin.html
+  安装Sencha Ext JS插件，以支持extjs开发；安装好之后打开文件：LicenseManager.js（路径：C:\Users\你的用户名\.vscode\extensions\Sencha.vscode-extjs-版本号\out\src\LicenseManager.js）;把下面代码做如下修改，从const licenses到licenseJson = 上面的}止 这段/* */注释掉 加入：
   						this.license ={
 						    active:true,
 						    full:true,
 						    data:{}
 						}
+  5. 格式化代码
+  Windows：Shift + Alt + F
+  Mac： Shift + Option + F
+  Ubuntu： Ctrl + Shift + I

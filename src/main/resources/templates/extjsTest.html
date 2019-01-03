@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<script th:src="@{/static/js/extjs6.6.0/ext.js}"></script>
+<script th:src="@{/static/js/extjs6.6.0/ext-all.js}"></script>
+<script type="text/javascript" src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+Ext.onReady(function () {
+console.log("extjs回调");
+$("#EP_XFYSR_if").click(function(){
+    testUrl("tryopen");
+}); 
+});
+</script>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Insert title here</title>
+</head>
+
+<body>
+    <div class="div-content1" style="margin-right: 20px; margin-left: 20px; margin-top:20px">
+        <p>builds目录是Extjs压缩后的代码，体积更小，加载更快。</p>
+        <p>docs是Extjs的文档，包括Ext的Api，必备工具。</p>
+        <p>example是官方的示例，学习就从研究这里面的代码开始。</p>
+        <p>locale是多国语言包，ext-lang-zh_CN.js是简体中文。（在项目中如果觉得开发包臃肿，可以把除了zh-cn外的都删除）</p>
+        <p>overview是Extjs功能描述。</p>
+        <p>pkgs是Extjs各部分功能的打包文件。</p>
+        <p>resource是Extjs中要用到的图片和样式表。</p>
+        <p>src目录是未压缩的源代码目录。</p>
+        <p>bootstrap.js是ExtJS库的引导文件, 通过参数可以自动切换ext-all.js和ext-all-debug.js。</p>
+        <p>ext-all.js文件是ExtJS的核心库,是必须要引入的。</p>
+        <p>ext-all-debug.js文件是ext-all.js的调试版。</p>
+    </div>
+</body>
+
+</html>
