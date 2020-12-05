@@ -9,13 +9,13 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        sh 'ls'
+        sh 'npm -v'
       }
     }
 
     stage('deploy') {
       steps {
-        sh 'ls'
+        sh 'node -v'
       }
     }
 
