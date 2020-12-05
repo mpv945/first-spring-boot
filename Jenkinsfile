@@ -12,6 +12,7 @@ pipeline {
         sh 'pwd'
         sh 'npm -v'
         sh 'ls'
+        sh 'uname -a'
       }
     }
 
