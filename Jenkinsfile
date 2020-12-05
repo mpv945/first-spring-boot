@@ -9,12 +9,14 @@ pipeline {
   stages {
     stage('test') {
       steps {
+        sh 'pwd'
         sh 'npm -v'
       }
     }
 
     stage('deploy') {
       steps {
+        sh 'pwd'
         sh 'node -v'
       }
     }
