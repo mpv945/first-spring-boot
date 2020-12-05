@@ -11,6 +11,7 @@ pipeline {
       steps {
         sh 'pwd'
         sh 'npm -v'
+        sh 'ls'
       }
     }
 
@@ -18,6 +19,7 @@ pipeline {
       steps {
         sh 'pwd'
         sh 'node -v'
+        sh 'ls'
       }
     }
 
